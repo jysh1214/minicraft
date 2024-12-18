@@ -1,0 +1,12 @@
+# vscode files
+.vscode
+
+# CMake artifacts
+build/
+build-*/
+
+# Python cached
+__pycached__
+
+# Python venv
+py3.12

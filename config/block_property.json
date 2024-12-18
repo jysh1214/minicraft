@@ -1,0 +1,6 @@
+{
+    "Solid" : 0,
+    "Fluid" : 1,
+    "PartialCell" : 2,
+    "Transparent" : 3
+}

@@ -1,0 +1,10 @@
+{
+    "Air" : {
+        "index" : 0,
+        "properties" : ["Transparent"]
+    },
+    "Grass" : {
+        "index" : 1,
+        "properties" : ["Solid"]
+    }
+}

@@ -1,0 +1,36 @@
+mc_add_lib(
+  NAME
+    mc_lib
+  SRCS
+    "block.cpp"
+    "camera.cpp"
+    "chunk.cpp"
+    "color.cpp"
+    "noise.cpp"
+    "operator.cpp"
+    "render.cpp"
+    "shader.cpp"
+    "terrain_generator.cpp"
+    "vertex_info.cpp"
+    "window.cpp"
+    "world.cpp"
+  DEPS
+    ${GenBlockHeaderFile}
+    ${OPENGL_LIBRARIES}
+    ${GLEW_LIB}
+    glfw
+    glm::glm
+    ${OpenCV_LIBS}
+  INCLUDES
+    ${OPENGL_INCLUDE_DIRS}
+    ${GLEW_INCLUDE_DIRS}
+    ${OpenCV_INCLUDE_DIRS}
+  COPTS
+    ${MSVC_RUNTIME_LIBRARY_CONFIG}
+  DEFINES
+    ${GLFW_SYSTEM_DEFINES}
+    ${GLEW_SYSTEM_DEFINES}
+    ${ENABLE_EXCEPTION_DEFINES}
+    ${SHADER_SOURCE_DIR_DEFINES}
+    ${OPENCV_STATIC_DEFINES}
+)
